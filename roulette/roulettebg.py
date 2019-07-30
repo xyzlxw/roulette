@@ -447,7 +447,7 @@ class Game:
         self.chip = Chip()
         self.score = Score()
         self.command = Button()
-        self.ball = Ball()
+        self.ball = None
         self.ro_end_time = datetime.today()
         self.state = STARTUP
 
@@ -499,12 +499,16 @@ class Game:
         self.chip.update(self.state)
         self.score.update(self.table.get_total_score())
         self.command.update(self.state)
+        if not self.ball:
+            self.ball = Ball()
         self.ball.update(ro_idx)
 
     def run(self):
+        # To show drawing process, set "demo=True"
         self.update(ro_idx=28, demo=False)
         onscreenclick(self.onclick, btn=1)
         self.tick()
+        # Turtle().getscreen().getcanvas().postscript(file="roulette.eps")
 
 
 def main():
