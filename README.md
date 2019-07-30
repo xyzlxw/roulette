@@ -8,9 +8,14 @@ In Roulette game, players may choose to place bets on either a single number, va
 
 ![ScreenShot](screenshot.jpg)
 
+Below video showing how to play the game. 
+- https://youtu.be/1Y1JAR7UCm4
+
 ## Operation 
 - Click on the lower right corner to choose bet chips, "1", "2", "10" or "50" 
 - Chick on the table to place bets, at least one chip is needed
 - Click on the lower left corner to "Start" or "New Round"
 
 **Note: only green areas are clickable!**
+
+
